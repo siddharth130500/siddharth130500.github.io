@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Generation App</title>
+    <!-- Replace the dynamic URL with a relative path -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Chess Icon -->
+        <!-- Replace the dynamic URL with a relative path -->
+        <img src="static/chess.png" alt="Chess Icon" class="chess-icon">
+
+        <h1>Chess Bot</h1>
+        
+        <!-- Instructional Text -->
+        <p class="instruction">
+            Ask a question related to the game of chess. The response will be generated using LLaMA, retrieving information from a textbook on chess.
+        </p>
+
+        <form id="query-form">
+            <label for="query">Enter your query:</label>
+            <input type="text" id="query" name="query" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Loading Animation and Text -->
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Loading... Please wait while we generate your response.</p>
+        </div>
+
+        <h2>Generated Response:</h2>
+        <p id="response"></p>
+    </div>
+
+    <!-- Replace the dynamic URL with a relative path -->
+    <script src="static/frontend.js"></script>
+</body>
+</html>
